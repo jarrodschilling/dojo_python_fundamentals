@@ -15,6 +15,7 @@ x[1][0] = 15
 students[0]['last_name'] = 'Bryant'
 sports_directory['soccer'][0] = 'Andres'
 z[0]['y'] = 30
+# print(z)
 
 #2
 
