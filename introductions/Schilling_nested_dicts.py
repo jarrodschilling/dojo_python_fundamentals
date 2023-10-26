@@ -21,9 +21,10 @@ z[0]['y'] = 30
 
 def iterateDictionary(some_list):
     for my_dict in some_list:
+        output = ""
         for key, val in my_dict.items():
-            print(f"{key} - {val}", end=", ")
-        print("")
+            output += f"{key} - {val},"
+        print(output.rstrip(", "))
 
 students = [
         {'first_name': 'Michael', 'last_name' : 'Jordan'},
@@ -32,7 +33,7 @@ students = [
         {'first_name' : 'KB', 'last_name' : 'Tonel'}
     ]
 
-# iterateDictionary(students)
+iterateDictionary(students)
 
 #3
 
