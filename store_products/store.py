@@ -1,6 +1,6 @@
 from products import Product
 
-class Store(Product):
+class Store():
     def __init__(self, name):
         self.name = name
         self.products_list = []
@@ -14,12 +14,13 @@ class Store(Product):
         return self
     
     def inflation(self, percent_increase):
-        super().update_price(percent_increase, True)
+        for product in self.products_list:
+            product.update_price(percent_increase, True)
 
     def set_clearance(self, category, percent_discount):
         for product in self.products_list:
-            if product['category'] == category:
-                super().update_price(percent_discount, False)
+            if product.category == category:
+                product.update_price(percent_discount, False)
         return self
 
 

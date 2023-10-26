@@ -10,4 +10,6 @@ evolution = Product("evolution", 90, "shirt")
 
 lululemon.add_product(abc).add_product(evolution).set_clearance("pants", 0.1)
 
-print(lululemon.products_list)
+for product in lululemon.products_list:
+    product.print_info()
+# print(lululemon.products_list)

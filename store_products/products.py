@@ -12,7 +12,7 @@ class Product:
 
         return self
         
-    def print_infor(self):
+    def print_info(self):
         print(self.name)
         print(self.category)
         print(self.price)
