@@ -5,7 +5,7 @@ from ninjas import Ninja
 class Dog(Pets):
     def __init__(self, name, tricks):
         super().__init__(name, "dog", tricks)
-        self.noise = "bark"
+        # self.noise = "bark"
     
     def sleep(self):
         super().sleep()
@@ -17,7 +17,7 @@ class Dog(Pets):
         super().play()
 
     def noise(self):
-        super().noise()
+        super().noise("bark")
 
 
 kylo = Dog("kylo", "jumps")

@@ -19,5 +19,5 @@ class Ninja:
     
     def bathe(self):
         print(f"{self.first_name} is bathing {self.pet.name}")
-        self.pet.noise
+        self.pet.noise()
         return self

@@ -17,6 +17,5 @@ class Pets:
     def play(self):
         self.health += 5
 
-    def noise(self):
-        print("run")
-
+    def noise(self, noise):
+        print(noise)
